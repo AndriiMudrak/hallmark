@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.button`
-  min-height: 30px;
+  min-height: 24px;
   min-width: 54px;
   display: flex;
   justify-content: center;

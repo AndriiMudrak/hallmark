@@ -28,4 +28,38 @@ export const Wrapper = styled.div`
       margin-bottom: 8px;
     }
   }
+
+  @media (max-width: ${({ theme }) => `${theme.breakpoints.md}px`}) {
+    margin: 0 4px;
+    .date {
+      font-size: 18px;
+    }
+
+    .card {
+      width: 128px;
+
+      .sponsor-logo {
+        font-size: 18px;
+        width: 80px;
+      }
+
+      button {
+        font-size: 12px;
+        padding: 0 4px 0 8px;
+        height: 20px;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      button {
+        svg {
+          width: 4px;
+          height: 7px;
+        }
+      }
+    }
+  }
 `;

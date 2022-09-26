@@ -12,6 +12,10 @@ export const Wrapper = styled.header`
     cursor: pointer;
   }
 
+  .menu {
+    display: none;
+  }
+
   .left {
     display: flex;
     align-items: center;
@@ -19,6 +23,7 @@ export const Wrapper = styled.header`
     .logo {
       margin: 0 74px;
       cursor: pointer;
+      text-align: center;
     }
 
     .main {
@@ -32,5 +37,29 @@ export const Wrapper = styled.header`
     display: flex;
     align-items: center;
     margin-right: 60px;
+  }
+
+  @media (max-width: ${({ theme }) => `${theme.breakpoints.md}px`}) {
+    .menu {
+      display: block;
+      margin: 0 6px;
+    }
+
+    .left {
+      width: 100%;
+
+      .logo {
+        width: 100%;
+        padding-right: 10px;
+      }
+
+      .main {
+        display: none;
+      }
+    }
+
+    .right {
+      display: none;
+    }
   }
 `;

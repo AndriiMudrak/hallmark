@@ -6,7 +6,7 @@ const RightBar = () => {
 
   return (
     <Wrapper>
-      FPO
+      <div>FPO</div>
     </Wrapper>
   );
 }

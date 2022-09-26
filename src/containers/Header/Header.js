@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 
 import LogoImg from '../../public/Logo.svg';
+import BurgerIcon from '../../public/BurgerIcon.svg';
 import { MAIN_CATAGORIES, RIGHT_CATEGORIES } from '../../constants/header';
 import { Wrapper } from './Header.style';
 
@@ -13,6 +14,9 @@ const Header = () => {
   return (
     <Wrapper>
       <div className="left">
+        <div className="menu">
+          <img src={BurgerIcon} alt="logo"/>
+        </div>
         <div className="logo">
           <img src={LogoImg} alt="logo"/>
         </div>

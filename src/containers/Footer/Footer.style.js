@@ -1,19 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.footer`
-  max-width: 1024px;
-  color: ${({ theme }) => theme.colors.black};
-  font-size: 11px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  margin: 64px 400px 40px 0;
+  display: none;
 
-  span {
-    font-weight: 600;
-  }
-
-  .link {
-    cursor: pointer;
-    text-decoration: underline;
+  @media (max-width: ${({ theme }) => `${theme.breakpoints.md}px`}) {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    width: 100%;
+    background-color:  ${({ theme }) => theme.colors.black};
   }
 `;

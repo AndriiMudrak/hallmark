@@ -24,4 +24,19 @@ export const Wrapper = styled.div`
     font-size:36px;
     font-weight: 800;
   }
+
+  @media (max-width: ${({ theme }) => `${theme.breakpoints.md}px`}) {
+    width: 82px;
+    height: 92px;
+    line-height: 15px;
+    padding-left: 8px;
+    
+    .month {
+      font-size: 14px;
+    }
+
+    .day {
+      font-size: 20px;
+    }
+  }
 `;
